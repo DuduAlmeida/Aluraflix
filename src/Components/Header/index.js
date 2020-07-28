@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from "../../assets/img/Esmerarflix.png"
-import "./Menu.css"
+import Logo from "../../assets/img/Aluraflix.png"
+import "./Header.css"
 import ButtonLink from '../ButtonLink';
 // import { Container } from './styles';
 
