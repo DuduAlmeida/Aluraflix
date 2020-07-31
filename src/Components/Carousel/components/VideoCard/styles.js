@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '../../../../../node_modules/styled-components';
 
 export const VideoCardContainer = styled.a`
   border: 2px solid;

@@ -43,3 +43,9 @@ a {
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
+}

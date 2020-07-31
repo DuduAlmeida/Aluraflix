@@ -1,24 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from "../../assets/img/Aluraflix.png"
 import "./Header.css"
-import ButtonLink from '../ButtonLink';
-// import { Container } from './styles';
+import {Button} from '../Button';
+// import ButtonLink from '../ButtonLink';
+
 
 function Header() {
   return (
     <header>
       <nav className="Menu">
 
-        <a href="/">
-          <img src={Logo} alt="EsmerarFlix logo" className="Logo" />
-        </a>
+        <Link  to="/">
+          <img src={Logo} alt="AluraFlix logo" className="Logo" />
+        </Link >
 
-
-        <ButtonLink
+        <Button 
+          as={Link} 
+          className="ButtonLink" 
+          to="/cadastro/video">
+          Novo vídeo
+        </Button>
+        
+        {/* <ButtonLink
           href="/"
           className="ButtonLink">
           Novo Vídeo
-        </ButtonLink>
+        </ButtonLink> */}
       </nav>
     </header>
   );
